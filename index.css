@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 97vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  margin: 2rem;
+}
+
+main {
+  min-height: 30vh;
+  border: 1px solid black;
+  margin: 2rem;
+  display: flex;
+}
+
+.profilePic {
+  min-width: 3rem;
+  width: 6vw;
+}
+
+.menu {
+  min-width: 3rem;
+  width: 5vw;
+  object-fit: contain;
+}
+
+.webCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  margin: 2rem;
+  padding: 1rem;
+  min-width: 5rem;
+  width: 15rem;
+  border-radius: 5px;
+}
