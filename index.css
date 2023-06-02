@@ -29,12 +29,18 @@ header {
 }
 
 main {
-  min-height: 30vh;
+  min-height: 58vh;
   border-radius: 10px;
   padding: 1.5rem 1rem;
   margin: 0 2rem;
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  margin: 1rem;
+  bottom: 0;
 }
 
 a {
