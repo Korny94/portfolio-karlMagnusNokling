@@ -9,7 +9,12 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: rgba(232, 232, 232, 0.474);
+  /* background-color: rgba(232, 232, 232, 0.474); */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 238, 238, 0.2),
+    rgba(215, 238, 255, 0.2)
+  );
   display: flex;
   flex-direction: column;
   min-height: 97vh;
@@ -77,7 +82,7 @@ p {
 .cardContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 2.5rem;
+  grid-gap: 4rem;
 }
 
 .webCard {
@@ -87,8 +92,36 @@ p {
   background-position: center top;
   justify-content: space-between;
   padding-bottom: 65%;
-  overflow: hidden;
 }
+
+.webCard::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  bottom: -7px;
+  left: -7px;
+  z-index: -1;
+  background: linear-gradient(
+    to bottom,
+    rgba(240, 240, 240, 0.394),
+    rgba(190, 228, 255, 0.361)
+  );
+  border-radius: 5px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.402);
+}
+
+/* .border {
+  border: 10px solid;
+  border-image: linear-gradient(
+      to bottom,
+      rgba(193, 255, 179, 0.5),
+      rgba(144, 172, 255, 0.5)
+    )
+    50; 
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+} */
 
 .overlay {
   position: absolute;
