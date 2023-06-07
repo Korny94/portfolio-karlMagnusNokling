@@ -55,12 +55,11 @@ a {
 
 h2 {
   color: white;
-  font-size: clamp(1em, 2rem, 5vw);
-  padding-bottom: 3vh;
+  font-size: clamp(0.5em, 2rem, 5vw);
 }
 
 p {
-  font-size: clamp(1rem, 5vw, 1.5rem);
+  font-size: clamp(0.5rem, 5vw, 1.5rem);
   text-align: center;
   color: white;
   padding-left: 2vw;
@@ -85,6 +84,10 @@ p {
   grid-gap: 4rem;
 }
 
+.webCard:hover {
+  scale: 1.02;
+}
+
 .webCard {
   position: relative;
   background-size: cover;
@@ -92,6 +95,12 @@ p {
   background-position: center top;
   justify-content: space-between;
   padding-bottom: 65%;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.webCard * {
+  margin: 0;
 }
 
 .webCard::before {
@@ -111,18 +120,6 @@ p {
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.402);
 }
 
-/* .border {
-  border: 10px solid;
-  border-image: linear-gradient(
-      to bottom,
-      rgba(193, 255, 179, 0.5),
-      rgba(144, 172, 255, 0.5)
-    )
-    50; 
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-} */
-
 .overlay {
   position: absolute;
   top: 0;
@@ -131,7 +128,7 @@ p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 450ms ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,12 +140,19 @@ p {
   opacity: 1;
 }
 
-.webCard * {
-  margin: 0;
+.overlay * {
+  transition-duration: 200ms;
+}
+
+.overlay > :hover {
+  scale: 1.02;
 }
 
 .githubLink {
+  background-color: rgb(232, 232, 232);
+  padding: 0.5rem 1.4rem;
+  border-radius: 10px;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   font-weight: 700;
-  color: white;
+  color: black;
 }

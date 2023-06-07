@@ -1,37 +1,79 @@
-// const cardExam = document.querySelector("#cardExam");
+const cardExam = document.getElementById("cardExam");
+const gitExam = document.getElementById("gitExam");
+const cardSquareEyes = document.getElementById("cardSquareEyes");
+const gitSquareEyes = document.getElementById("gitSquareEyes");
+const cardMuseum = document.getElementById("cardMuseum");
+const gitMuseum = document.getElementById("gitMuseum");
+const cardChat = document.getElementById("cardChat");
+const gitChat = document.getElementById("gitChat");
+const cardKeyGame = document.getElementById("cardKeyGame");
+const gitKeyGame = document.getElementById("gitKeyGame");
+const cardBionicReading = document.getElementById("cardBionicReading");
+const gitBionicReading = document.getElementById("gitBionicReading");
 
-// const cardSquareEyes = document.querySelector("#cardSquareEyes");
+// Redirect function for git
+const redirectToGit = (event, link) => {
+  event.stopPropagation(); // Prevent click event from bubbling up to cardExam
+  window.open(link, "_blank");
+};
 
-// const cardMuseum = document.querySelector("#cardMuseum");
+// Add click event listener to git
+gitExam.addEventListener("click", (event) =>
+  redirectToGit(
+    event,
+    "https://github.com/Noroff-FEU-Assignments/project-exam-1-Korny94"
+  )
+);
 
-// const cardChat = document.querySelector("#cardChat");
+gitSquareEyes.addEventListener("click", (event) =>
+  redirectToGit(event, "https://github.com/Korny94/square_eyes")
+);
 
-// const cardKeyGame = document.querySelector("#cardKeyGame");
+gitMuseum.addEventListener("click", (event) =>
+  redirectToGit(event, "https://github.com/Korny94/semester-project-1")
+);
 
-// const hello = "hello";
+gitChat.addEventListener("click", (event) =>
+  redirectToGit(event, "https://github.com/Korny94/chatGPT-hee")
+);
 
-// const gitExam = document.querySelector("#gitExam");
+gitKeyGame.addEventListener("click", (event) =>
+  redirectToGit(event, "https://github.com/Korny94/riddleGame")
+);
 
-// function hover(event, arg) {
-//   event.target.style.transform = "scale(1.03)";
-//   arg.style.opacity = "1";
-// }
+gitBionicReading.addEventListener("click", (event) =>
+  redirectToGit(event, "https://github.com/Korny94/bionicReading")
+);
 
-// cardExam.addEventListener("mouseover", function (event) {
-//   hover(event, gitExam);
-// });
+// Redirect function for card
+const redirectToWebsite = (event, link) => {
+  window.open(link, "_blank");
+};
 
-// function unhover(arg) {
-//   this.style.transform = "scale(1)";
-// }
+// Add click event listener to card
+cardExam.addEventListener("click", (event) =>
+  redirectToWebsite(
+    event,
+    "https://project-exam-1-korny94.netlify.app/index.html"
+  )
+);
 
-// // cardSquareEyes.addEventListener("mouseover", hover);
-// // cardMuseum.addEventListener("mouseover", hover);
-// // cardChat.addEventListener("mouseover", hover);
-// // cardKeyGame.addEventListener("mouseover", hover);
+cardSquareEyes.addEventListener("click", (event) =>
+  redirectToWebsite(event, "https://my-first-website-square-eyes.netlify.app")
+);
 
-// // cardExam.addEventListener("mouseout", unhover);
-// // cardSquareEyes.addEventListener("mouseout", unhover);
-// // cardMuseum.addEventListener("mouseout", unhover);
-// // cardChat.addEventListener("mouseout", unhover);
-// // cardKeyGame.addEventListener("mouseout", unhover);
+cardMuseum.addEventListener("click", (event) =>
+  redirectToWebsite(event, "https://semester-project-1-leonardo.netlify.app/")
+);
+
+cardChat.addEventListener("click", (event) =>
+  redirectToWebsite(event, "https://chatgpt-hee.netlify.app/")
+);
+
+cardKeyGame.addEventListener("click", (event) =>
+  redirectToWebsite(event, "https://findkeygame.netlify.app/index.html")
+);
+
+cardBionicReading.addEventListener("click", (event) =>
+  redirectToWebsite(event, "https://bionicreading.netlify.app/")
+);
