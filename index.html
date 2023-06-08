@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/index.css" />
     <link rel="icon" href="/img/profilePic.png" />
     <script defer src="/index.js"></script>
+    <script defer src="/js/menu.js"></script>
+
   </head>
   <body>
     <header>
@@ -18,10 +20,17 @@
           alt="Profile picture"
       /></a>
       <h1 class="profileName">Karl Magnus Leonardo Nøkling</h1>
-      <img class="menu" src="/img/icons/menu.png" alt="menu" />
+      <div class="menu">
+        <img class="random" src="/img/icons/random.png"/>
+        <img class="hamburgerMenu" id="hamMenu" src="/img/icons/menu.png" alt="menu" />
+      </div>
+      <div class="menuContainer" id="menuContainer">
+        <a href="/index.html" class="active"><img src="/img/icons/home.png"/> Home</a>
+        <a href="/html/about.html"><img src="/img/icons/about.png"/>About</a>
+        <a href="/html/contact.html"><img src="/img/icons/contact.png"/>Contact</a>
     </header>
     <main>
-      <div class="cardContainer">
+      <div id="cardContainer" class="cardContainer">
         <div
           class="webCard"
           id="cardExam"
