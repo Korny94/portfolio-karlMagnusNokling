@@ -290,6 +290,10 @@ span {
     background-color: red;
   }
 
+  .overlay {
+    display: none;
+  }
+
   .overlay:hover {
     opacity: 0;
   }
