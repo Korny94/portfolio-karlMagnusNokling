@@ -289,4 +289,20 @@ span {
   body {
     background-color: red;
   }
+
+  .overlay:hover {
+    opacity: 0;
+  }
+
+  h3 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.402);
+  }
 }
