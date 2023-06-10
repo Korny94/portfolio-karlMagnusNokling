@@ -58,7 +58,7 @@ a {
 
 h2 {
   color: white;
-  font-size: clamp(0.5em, 2rem, 5vw);
+  font-size: clamp(1.8em, 2rem, 5vw);
 }
 
 p {
@@ -297,6 +297,16 @@ span {
   .overlay {
     opacity: 1;
   }
+  .menuContainer {
+    height: 110vh;
+    bottom: -10px;
+    right: -10px;
+    width: 30vw;
+  }
+
+  .menuContainer a {
+    margin-left: 5vw;
+  }
 }
 
 @media (max-width: 649px) {
@@ -318,5 +328,22 @@ span {
     left: 48%;
     transform: translate(-50%, -50%);
     padding-left: 0;
+  }
+
+  .contactPara {
+    width: 300px;
+    font-size: 1.4rem;
+  }
+
+  .contactInfo {
+    width: 300px;
+  }
+
+  .contactInfo * {
+    font-size: 1.1rem;
+  }
+
+  .menuContainer a {
+    margin-left: 7vw;
   }
 }
