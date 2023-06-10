@@ -312,6 +312,10 @@ span {
   .menuContainer img {
     height: 4vh;
   }
+
+  .home {
+    margin-top: 4rem;
+  }
 }
 
 @media (max-width: 649px) {
