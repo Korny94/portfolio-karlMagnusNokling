@@ -32,6 +32,10 @@ header {
   padding: 1rem 2rem;
 }
 
+h1 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
 main {
   min-height: 58vh;
   border-radius: 10px;
@@ -291,22 +295,20 @@ span {
   }
 
   .overlay {
-    display: none;
+    opacity: 1;
   }
+}
 
-  .overlay:hover {
-    opacity: 0;
+@media (max-width: 649px) {
+  body {
+    margin-top: 2rem;
   }
-
-  h3 {
+  h1 {
+    white-space: nowrap;
     position: absolute;
-    bottom: 0;
+    top: 1rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 0.5rem 2.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.402);
+    padding-left: 0;
   }
 }
