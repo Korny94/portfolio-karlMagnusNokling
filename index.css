@@ -363,3 +363,9 @@ span {
     margin-left: 6vw;
   }
 }
+
+@media (orientation: landscape) {
+  .home {
+    margin: 8rem 0 0 0;
+  }
+}
