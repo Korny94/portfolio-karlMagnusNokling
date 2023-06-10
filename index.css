@@ -303,6 +303,9 @@ span {
   body {
     margin-top: 2rem;
   }
+  header {
+    margin: 1rem 0 0 0;
+  }
   h1 {
     white-space: nowrap;
     position: absolute;
