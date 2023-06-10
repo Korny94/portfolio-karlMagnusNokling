@@ -306,7 +306,11 @@ span {
 
   .menuContainer a {
     margin-left: 5vw;
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .menuContainer img {
+    height: 4vh;
   }
 }
 
