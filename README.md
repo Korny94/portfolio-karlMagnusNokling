@@ -1,7 +1,5 @@
 # portfolio-karlMagnusNokling
 
-# Portfolio - Karl Magnus Leonardo Nøkling
-
 ![image](https://raw.githubusercontent.com/Korny94/portfolio-karlMagnusNokling/main/img/screenshots/portfolio.PNG)
 
 ## Description
