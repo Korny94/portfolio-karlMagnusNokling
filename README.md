@@ -66,21 +66,29 @@ Thank you for considering contributing to the project! Contributions are welcome
 
 2. Clone the forked repository to your local machine using Git and Visual Studio Code:
 
+```bash
 git clone https://github.com/YourUsername/your-project.git
+```
 
 3. Create a new branch for your changes:
 
+```bash
 git checkout -b my-feature
+```
 
 4. Make your desired changes to the project files using Visual Studio Code.
 
 5. Commit your changes with descriptive commit messages:
 
+```bash
 git commit -m "Add new feature"
+```
 
 6. Push your changes to your forked repository:
 
+```bash
 git push origin my-feature
+```
 
 7. Open a pull request on the original repository.
 
