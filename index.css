@@ -364,7 +364,7 @@ span {
   }
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-width: 949.5px) {
   .home {
     margin: 8.5rem 0 0 0;
   }
