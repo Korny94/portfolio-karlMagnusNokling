@@ -296,10 +296,6 @@ span {
 }
 
 @media (max-width: 949.5px) {
-  body {
-    background-color: red;
-  }
-
   .overlay {
     opacity: 1;
   }
