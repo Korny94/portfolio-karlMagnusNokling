@@ -5,6 +5,7 @@ const links = [
   "https://chatgpt-hee.netlify.app/",
   "https://findkeygame.netlify.app/index.html",
   "https://bionicreading.netlify.app/",
+  "https://haleybear.netlify.app",
 ];
 
 const randomLink = document.getElementById("random");
