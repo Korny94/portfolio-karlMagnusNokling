@@ -6,6 +6,7 @@ const links = [
   "https://findkeygame.netlify.app/index.html",
   "https://bionicreading.netlify.app/",
   "https://haleybear.netlify.app",
+  "https://my-semester-project-2.netlify.app/",
 ];
 
 const randomLink = document.getElementById("random");

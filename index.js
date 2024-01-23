@@ -12,6 +12,8 @@ const cardBionicReading = document.getElementById("cardBionicReading");
 const gitBionicReading = document.getElementById("gitBionicReading");
 const cardHaley = document.getElementById("cardHaley");
 const gitHaley = document.getElementById("gitHaley");
+const cardBidazzle = document.getElementById("cardBidazzle");
+const gitBidazzle = document.getElementById("gitBidazzle");
 
 // Redirect function for git
 const redirectToGit = (event, link) => {
@@ -51,6 +53,10 @@ gitHaley.addEventListener("click", (event) =>
   redirectToGit(event, "https://github.com/Korny94/backendTest/tree/sub")
 );
 
+gitBidazzle.addEventListener("click", (event) =>
+  redirectToGit(event, "https://github.com/Korny94/semester-project-2")
+);
+
 // Redirect function for card
 const redirectToWebsite = (event, link) => {
   window.open(link, "_blank");
@@ -86,4 +92,8 @@ cardBionicReading.addEventListener("click", (event) =>
 
 cardHaley.addEventListener("click", (event) =>
   redirectToWebsite(event, "https://haleybear.netlify.app/")
+);
+
+cardBidazzle.addEventListener("click", (event) =>
+  redirectToWebsite(event, "https://my-semester-project-2.netlify.app/")
 );
