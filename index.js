@@ -14,6 +14,7 @@ const cardHaley = document.getElementById("cardHaley");
 const gitHaley = document.getElementById("gitHaley");
 const cardBidazzle = document.getElementById("cardBidazzle");
 const gitBidazzle = document.getElementById("gitBidazzle");
+const gitTeetalk = document.getElementById("gitTeetalk");
 
 // Redirect function for git
 const redirectToGit = (event, link) => {
@@ -57,6 +58,10 @@ gitBidazzle.addEventListener("click", (event) =>
   redirectToGit(event, "https://github.com/Korny94/semester-project-2")
 );
 
+gitTeetalk.addEventListener("click", (event) =>
+  redirectToGit(event, "https://github.com/Korny94/javascript2-ca")
+);
+
 // Redirect function for card
 const redirectToWebsite = (event, link) => {
   window.open(link, "_blank");
@@ -96,4 +101,8 @@ cardHaley.addEventListener("click", (event) =>
 
 cardBidazzle.addEventListener("click", (event) =>
   redirectToWebsite(event, "https://my-semester-project-2.netlify.app/")
+);
+
+cardTeetalk.addEventListener("click", (event) =>
+  redirectToWebsite(event, "https://teetalk.netlify.app/")
 );
