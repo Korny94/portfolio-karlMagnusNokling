@@ -15,6 +15,12 @@ const gitHaley = document.getElementById("gitHaley");
 const cardBidazzle = document.getElementById("cardBidazzle");
 const gitBidazzle = document.getElementById("gitBidazzle");
 const gitTeetalk = document.getElementById("gitTeetalk");
+const gitJsFramework = document.getElementById("gitJsFramework");
+const cardJsFramework = document.getElementById("cardJsFramework");
+const gitProjectExam2 = document.getElementById("gitProjectExam2");
+const cardProjectExam2 = document.getElementById("cardProjectExam2");
+const gitArenaMat = document.getElementById("gitArenaMat");
+const cardArenaMat = document.getElementById("cardArenaMat");
 
 // Redirect function for git
 const redirectToGit = (event, link) => {
@@ -23,6 +29,18 @@ const redirectToGit = (event, link) => {
 };
 
 // Add click event listener to git
+gitArenaMat.addEventListener("click", (event) =>
+  redirectToGit(event, "https://github.com/Korny94/arenaMat")
+);
+
+gitProjectExam2.addEventListener("click", (event) =>
+  redirectToGit(event, "https://github.com/Korny94/project-exam-2")
+);
+
+gitJsFramework.addEventListener("click", (event) =>
+  redirectToGit(event, "https://github.com/Korny94/javascript-frameworks-CA")
+);
+
 gitExam.addEventListener("click", (event) =>
   redirectToGit(
     event,
@@ -68,6 +86,18 @@ const redirectToWebsite = (event, link) => {
 };
 
 // Add click event listener to card
+cardArenaMat.addEventListener("click", (event) =>
+  redirectToWebsite(event, "https://arenamat.netlify.app/")
+);
+
+cardProjectExam2.addEventListener("click", (event) =>
+  redirectToWebsite(event, "https://project-exam-2-korny94.netlify.app/")
+);
+
+cardJsFramework.addEventListener("click", (event) =>
+  redirectToWebsite(event, "https://js-frameworks-ca.netlify.app/")
+);
+
 cardExam.addEventListener("click", (event) =>
   redirectToWebsite(
     event,
