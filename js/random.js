@@ -5,9 +5,16 @@ const links = [
   "https://chatgpt-hee.netlify.app/",
   "https://findkeygame.netlify.app/index.html",
   "https://bionicreading.netlify.app/",
-  "https://haleybear.netlify.app",
   "https://my-semester-project-2.netlify.app/",
   "https://teetalk.netlify.app/",
+  "https://qr-arrangement.netlify.app/",
+  "https://arrangement-service.netlify.app",
+  "https://rsvp-arrangement.netlify.app",
+  "https://bryllupsnettside.netlify.app/",
+  "https://arenamat.netlify.app/",
+  "https://project-exam-2-korny94.netlify.app/",
+  "https://js-frameworks-ca.netlify.app/",
+  // "https://haley.no",
 ];
 
 const randomLink = document.getElementById("random");

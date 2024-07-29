@@ -21,6 +21,16 @@ const gitProjectExam2 = document.getElementById("gitProjectExam2");
 const cardProjectExam2 = document.getElementById("cardProjectExam2");
 const gitArenaMat = document.getElementById("gitArenaMat");
 const cardArenaMat = document.getElementById("cardArenaMat");
+const cardArrangementService = document.getElementById(
+  "cardArrangementService"
+);
+const gitArrangementService = document.getElementById("gitArrangementService");
+const cardQrArrangement = document.getElementById("cardQrArrangement");
+const gitQrArrangement = document.getElementById("gitQrArrangement");
+const cardEventArrangement = document.getElementById("cardEventArrangement");
+const gitEventArrangement = document.getElementById("gitEventArrangement");
+const cardRsvpArrangement = document.getElementById("cardRsvpArrangement");
+const gitRsvpArrangement = document.getElementById("gitRsvpArrangement");
 
 // Redirect function for git
 const redirectToGit = (event, link) => {
@@ -29,8 +39,39 @@ const redirectToGit = (event, link) => {
 };
 
 // Add click event listener to git
+gitRsvpArrangement.addEventListener("click", (event) =>
+  redirectToGit(
+    event,
+    "https://github.com/Korny94/private-repository/blob/main/README.md"
+  )
+);
+
+gitEventArrangement.addEventListener("click", (event) =>
+  redirectToGit(
+    event,
+    "https://github.com/Korny94/private-repository/blob/main/README.md"
+  )
+);
+
+gitQrArrangement.addEventListener("click", (event) =>
+  redirectToGit(
+    event,
+    "https://github.com/Korny94/private-repository/blob/main/README.md"
+  )
+);
+
+gitArrangementService.addEventListener("click", (event) =>
+  redirectToGit(
+    event,
+    "https://github.com/Korny94/private-repository/blob/main/README.md"
+  )
+);
+
 gitArenaMat.addEventListener("click", (event) =>
-  redirectToGit(event, "https://github.com/Korny94/arenaMat")
+  redirectToGit(
+    event,
+    "https://github.com/Korny94/private-repository/blob/main/README.md"
+  )
 );
 
 gitProjectExam2.addEventListener("click", (event) =>
@@ -69,7 +110,10 @@ gitBionicReading.addEventListener("click", (event) =>
 );
 
 gitHaley.addEventListener("click", (event) =>
-  redirectToGit(event, "https://github.com/Korny94/backendTest/tree/sub")
+  redirectToGit(
+    event,
+    "https://github.com/Korny94/private-repository/blob/main/README.md"
+  )
 );
 
 gitBidazzle.addEventListener("click", (event) =>
@@ -86,6 +130,22 @@ const redirectToWebsite = (event, link) => {
 };
 
 // Add click event listener to card
+cardRsvpArrangement.addEventListener("click", (event) =>
+  redirectToWebsite(event, "https://rsvp-arrangement.netlify.app")
+);
+
+cardEventArrangement.addEventListener("click", (event) =>
+  redirectToWebsite(event, "https://bryllupsnettside.netlify.app/")
+);
+
+cardQrArrangement.addEventListener("click", (event) =>
+  redirectToWebsite(event, "https://qr-arrangement.netlify.app/")
+);
+
+cardArrangementService.addEventListener("click", (event) =>
+  redirectToWebsite(event, "https://arrangement-service.netlify.app")
+);
+
 cardArenaMat.addEventListener("click", (event) =>
   redirectToWebsite(event, "https://arenamat.netlify.app/")
 );
@@ -125,9 +185,9 @@ cardBionicReading.addEventListener("click", (event) =>
   redirectToWebsite(event, "https://bionicreading.netlify.app/")
 );
 
-cardHaley.addEventListener("click", (event) =>
-  redirectToWebsite(event, "https://haleybear.netlify.app/")
-);
+// cardHaley.addEventListener("click", (event) =>
+// redirectToWebsite(event, "https://haley.no")
+// );
 
 cardBidazzle.addEventListener("click", (event) =>
   redirectToWebsite(event, "https://my-semester-project-2.netlify.app/")
