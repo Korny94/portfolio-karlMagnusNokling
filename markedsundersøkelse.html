@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markedsundersøkelse</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Markedsundersøkelse</h1>
+        <button id="languageSwitch" onclick="toggleLanguage()">English</button>
+      </header>
+
+      <form id="surveyForm">
+        <section>
+          <h2 id="personalInfoTitle">Om deg</h2>
+
+          <label for="ageRange" id="ageLabel">Aldersgruppe:</label>
+          <select id="ageRange" name="ageRange">
+            <option value="under18">Under 18</option>
+            <option value="18-30">18-30</option>
+            <option value="31-50">31-50</option>
+            <option value="over50">Over 50</option>
+          </select>
+
+          <label for="gender" id="genderLabel">Kjønn:</label>
+          <div id="gender">
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male" id="maleLabel">Mann</label>
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female" id="femaleLabel">Kvinne</label>
+
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other" id="otherLabel">Annet</label>
+          </div>
+        </section>
+
+        <section>
+          <h2 id="healthSystemTitle">Helsevesenet</h2>
+
+          <label for="rating" id="ratingLabel"
+            >Hvordan vurderer du det norske helsevesenet?</label
+          >
+          <input type="number" id="rating" name="rating" min="1" max="10" />
+
+          <label for="navigation" id="navigationLabel"
+            >Føler du at det er vanskelig å navigere gjennom
+            helsevesenet?</label
+          >
+          <div id="navigation">
+            <input type="radio" id="yes" name="navigation" value="yes" />
+            <label for="yes" id="yesLabel">Ja</label>
+
+            <input type="radio" id="no" name="navigation" value="no" />
+            <label for="no" id="noLabel">Nei</label>
+          </div>
+
+          <label for="improvements" id="improvementsLabel"
+            >Hvordan ville du forbedret det?</label
+          >
+          <textarea id="improvements" name="improvements" rows="4"></textarea>
+        </section>
+
+        <section>
+          <h2 id="finalQuestionsTitle">Spørsmål</h2>
+
+          <label for="unansweredQuestions" id="unansweredQuestionsLabel"
+            >Hvilke spørsmål har du som helsevesenet ikke har svart på?</label
+          >
+          <textarea
+            id="unansweredQuestions"
+            name="unansweredQuestions"
+            rows="4"
+          ></textarea>
+
+          <label id="otherTopicsLabel"
+            >Er det noen andre temaer du er interessert i?</label
+          >
+          <div id="otherTopics">
+            <input
+              type="checkbox"
+              id="mentalHealth"
+              name="otherTopics"
+              value="mentalHealth"
+            />
+            <label for="mentalHealth" id="mentalHealthLabel"
+              >Mental Helse</label
+            >
+
+            <input
+              type="checkbox"
+              id="physicalHealth"
+              name="otherTopics"
+              value="physicalHealth"
+            />
+            <label for="physicalHealth" id="physicalHealthLabel"
+              >Fysisk Helse</label
+            >
+
+            <input
+              type="checkbox"
+              id="nutrition"
+              name="otherTopics"
+              value="nutrition"
+            />
+            <label for="nutrition" id="nutritionLabel">Ernæring</label>
+          </div>
+        </section>
+
+        <button type="submit" id="submitButton">Send inn</button>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

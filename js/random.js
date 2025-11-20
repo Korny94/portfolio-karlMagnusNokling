@@ -8,7 +8,7 @@ const links = [
   "https://my-semester-project-2.netlify.app/",
   "https://teetalk.netlify.app/",
   "https://qr-arrangement.netlify.app/",
-  "https://arrangement-service.netlify.app",
+  "https://eventen.no/",
   "https://rsvp-arrangement.netlify.app",
   "https://bryllupsnettside.netlify.app/",
   "https://arenamat.netlify.app/",

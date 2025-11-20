@@ -143,7 +143,7 @@ cardQrArrangement.addEventListener("click", (event) =>
 );
 
 cardArrangementService.addEventListener("click", (event) =>
-  redirectToWebsite(event, "https://arrangement-service.netlify.app")
+  redirectToWebsite(event, "https://eventen.no/")
 );
 
 cardArenaMat.addEventListener("click", (event) =>
